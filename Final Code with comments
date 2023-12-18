@@ -1,6 +1,6 @@
 import random
 while True:
-#setting up a while loop
+#setting up a while loop and setting up the bounds for this game
     flag= True
     while flag:
         num=input('Type a number for an upper bound: ')
