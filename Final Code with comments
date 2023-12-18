@@ -13,10 +13,11 @@ while True:
 
     #generating a number for the user to guess within their chosen bound
     secret=random.randint(1,num)
-    #Telling user how many times it took them to get the correct answer
+    
 guess=None
     count=1
-    while guess != secret:
+  #saying if the user guesses the correct answer print one thing if not then print the other thing
+while guess != secret:
         guess=input('Please type a number between 1 and ' +str(num)+ ": ")
         if guess.isdigit():
             guess=int(guess)
@@ -25,4 +26,5 @@ guess=None
         else:
             print('Please try again!')
             count +=1
-    print ('It took you', count, 'guesses!')
+    # telling the user how many attempts it took them to guess the number
+print ('It took you', count, 'guesses!')
